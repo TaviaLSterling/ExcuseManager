@@ -36,9 +36,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.description = new System.Windows.Forms.TextBox();
+            this.results = new System.Windows.Forms.TextBox();
+            this.lastUsed = new System.Windows.Forms.ComboBox();
+            this.fileDate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -125,36 +126,45 @@
             this.textBox4.TabIndex = 7;
             this.textBox4.Text = "File Date:";
             // 
-            // textBox5
+            // description
             // 
-            this.textBox5.Location = new System.Drawing.Point(246, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(293, 22);
-            this.textBox5.TabIndex = 8;
+            this.description.Location = new System.Drawing.Point(246, 46);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(293, 22);
+            this.description.TabIndex = 8;
             // 
-            // textBox6
+            // results
             // 
-            this.textBox6.Location = new System.Drawing.Point(246, 101);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(293, 22);
-            this.textBox6.TabIndex = 9;
+            this.results.Location = new System.Drawing.Point(246, 101);
+            this.results.Name = "results";
+            this.results.Size = new System.Drawing.Size(293, 22);
+            this.results.TabIndex = 9;
             // 
-            // comboBox1
+            // lastUsed
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(246, 156);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(293, 24);
-            this.comboBox1.TabIndex = 10;
+            this.lastUsed.FormattingEnabled = true;
+            this.lastUsed.Location = new System.Drawing.Point(246, 156);
+            this.lastUsed.Name = "lastUsed";
+            this.lastUsed.Size = new System.Drawing.Size(293, 24);
+            this.lastUsed.TabIndex = 10;
+            // 
+            // fileDate
+            // 
+            this.fileDate.Location = new System.Drawing.Point(246, 206);
+            this.fileDate.Name = "fileDate";
+            this.fileDate.ReadOnly = true;
+            this.fileDate.Size = new System.Drawing.Size(293, 22);
+            this.fileDate.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 354);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.fileDate);
+            this.Controls.Add(this.lastUsed);
+            this.Controls.Add(this.results);
+            this.Controls.Add(this.description);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -180,9 +190,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox description;
+        private System.Windows.Forms.TextBox results;
+        private System.Windows.Forms.ComboBox lastUsed;
+        private System.Windows.Forms.TextBox fileDate;
     }
 }
 
